@@ -1,0 +1,21 @@
+<h1>サンプルアプリ1</h1>
+<p>数値同士の足し算をします。</p>
+<%= form_tag("/", method: "get") do %>
+<table>
+<tr>
+  <td><%= label_tag :value1, "値1" %></td>
+  <td><%= text_field_tag :value1 %></td>
+  <td></td>
+</tr>  
+<tr>
+  <td><%= label_tag :value2, "値2" %></td>
+  <td><%= text_field_tag :value2 %></td>
+  <td><%= submit_tag "変換" %></td>
+</tr>
+<tr>
+  <td><%= label_tag :result, "結果" %></td>
+  <td><%= text_field_tag :result, @result %></td>
+  <td></td>
+</tr>
+</table>
+<% end %>
